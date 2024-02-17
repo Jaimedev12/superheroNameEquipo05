@@ -53,9 +53,9 @@ body {
 }
 
 .quiz-form-container {
-  background-color: rgba(224, 224, 224, 0.532);
+  background-color: rgba(224, 224, 224, 0.7);
   padding: 20px;  /* Adjust the padding as needed */
-  border-radius: 20px;  /* Add rounded corners if desired */
+  border-radius: 250px;  /* Add rounded corners if desired */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

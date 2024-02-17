@@ -3,6 +3,7 @@ import Container from "react-bootstrap/esm/Container";
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/Button";
 import Row from 'react-bootstrap/Row';
+import Modal from 'react-bootstrap/Modal';
 
 function Store({ heroList }) {
 
@@ -16,6 +17,12 @@ function Store({ heroList }) {
         });
         setPrices(newPrices);
     }, []);
+
+    // Modal logic
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <Container>
@@ -38,6 +45,7 @@ function Store({ heroList }) {
                                         const newBuyingHistory = { ...buyingHistory };
                                         newBuyingHistory[hero.id] = true;
                                         setBuyingHistory(newBuyingHistory);
+                                        handleShow();
                                     }}
                                     disabled={buyingHistory[hero.id] ? true : false}
                                 >
@@ -48,6 +56,17 @@ function Store({ heroList }) {
 
                 })}
             </Row>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Compra existosa!</Modal.Title>
+                    </Modal.Header>
+                        <Modal.Body>Gracias por tu compra!</Modal.Body>
+                    <Modal.Footer>
+                    <Button variant="primary" onClick={handleClose}>
+                        Cerrar
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </Container>
 
     );
