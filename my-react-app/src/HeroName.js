@@ -27,7 +27,7 @@ function HeroName() {
     }
 
     return (
-        <div className="quiz-form-container"> 
+        <div className="quiz-form-container m-3"> 
             <Form className="m-5" onSubmit={handleSubmit}>
                 <Row>
                     <Col lg={6}>
@@ -40,7 +40,7 @@ function HeroName() {
                     <Col lg={6}>
                         <h3 className='mb-3 action-comic'>Mes de nacimiento</h3>
                         <Form.Select aria-label="Default select example" required onChange={(e) => {setMonth(e.target.value)}}>
-                            <option value="">Elije tu mes de nacimiento</option>
+                            <option value="">Elige tu mes de nacimiento</option>
                             <option value={1}>Enero</option>
                             <option value={2}>Febrero</option>
                             <option value={3}>Marzo</option>

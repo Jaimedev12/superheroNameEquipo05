@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App" data>
       <Navigationbar />
+      <p className="my-3" >Marvel. (2024). Marvel Comics API. Marvel Developer Portal. https://developer.marvel.com/v1/</p>
       {/* <Header />
       <QuizForm /> */}
     </div>

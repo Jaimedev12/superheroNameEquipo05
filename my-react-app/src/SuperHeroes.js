@@ -7,7 +7,7 @@ function SuperHeroes({ heroList }) {
 
     return (
         <Container>
-            <h2 className="text-center">SuperHeroes</h2>
+            <h2 className="text-center my-3">Superhéroes</h2>
             <Row className="justify-content-center">
                 {heroList.map((hero, index) => {
                     if (hero.description && !hero.thumbnail.path.endsWith('image_not_available')) {

@@ -37,8 +37,8 @@ function Navigationbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/superheroes">Súper Heroes</Nav.Link>
-              <Nav.Link as={Link} to="/store">Store</Nav.Link>
+              <Nav.Link as={Link} to="/superheroes">Superhéroes</Nav.Link>
+              <Nav.Link as={Link} to="/store">Tienda</Nav.Link>
               <Nav.Link as={Link} to="/namecalc">Nombre de Héroe</Nav.Link>
             </Nav>
           </Navbar.Collapse>

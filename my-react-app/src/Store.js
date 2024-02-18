@@ -26,7 +26,7 @@ function Store({ heroList }) {
 
     return (
         <Container>
-            <h2 className="text-center">Store</h2>
+            <h2 className="text-center my-3">Tienda</h2>
             <Row className="justify-content-center">
                 {heroList.map((hero, index) => {
                     if (hero.description && !hero.thumbnail.path.endsWith('image_not_available')) {
@@ -58,9 +58,9 @@ function Store({ heroList }) {
             </Row>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Compra existosa!</Modal.Title>
+                    <Modal.Title>¡Compra exitosa!</Modal.Title>
                     </Modal.Header>
-                        <Modal.Body>Gracias por tu compra!</Modal.Body>
+                        <Modal.Body>¡Gracias por tu compra!</Modal.Body>
                     <Modal.Footer>
                     <Button variant="primary" onClick={handleClose}>
                         Cerrar
